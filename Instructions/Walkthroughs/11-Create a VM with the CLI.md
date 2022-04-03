@@ -1,56 +1,39 @@
-﻿<div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0" dir="rtl">
-    <article class="markdown-body entry-content container-lg" itemprop="text"><table>
-  <thead>
-  <tr>
-  <th>wts</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><div><table>
-  <thead>
-  <tr>
-  <th>title</th>
-  <th>module</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><div>11 - إنشاء جهاز ظاهري باستخدام CLI (10 دقائق)</div></td>
-  <td><div>الوحدة 03: وصف الحلول الأساسية وأدوات الإدارة</div></td>
-  </tr>
-  </tbody>
-</table>
-</div></td>
-  </tr>
-  </tbody>
-</table>
-       
-# 11 - إنشاء جهاز ظاهري باستخدام CLI (10 دقائق)
+---
+wts:
+  title: 11 - إنشاء جهاز ظاهري باستخدام CLI (10 دقائق)
+  module: 'Module 03: Describe core solutions and management tools'
+ms.openlocfilehash: 6e88e520011ccf4f1d02fd14038a457226492082
+ms.sourcegitcommit: 26c283fffdd08057fdce65fa29de218fff21c7d0
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137907253"
+---
+# <a name="11---create-a-vm-with-the-cli-10-min"></a>11 - إنشاء جهاز ظاهري باستخدام CLI (10 دقائق)
 
 في هذا المعاينة، سنكوّن Cloud Shell، ونستخدم Azure CLI لإنشاء مجموعة موارد وجهاز ظاهري ومراجعة توصيات Azure Advisor. 
 
-# المهمة 1: تكوين Cloud Shell 
+# <a name="task-1-configure-the-cloud-shell"></a>المهمة 1: تكوين Cloud Shell 
 
-في هذه المهمة، سنكوِّن Cloud Shell، ونستخدم Azure CLI لإنشاء مجموعة موارد وجهاز ظاهري.  
+في هذه المهمة، سنقوم بتكوين Cloud Shell، ونستخدم Azure CLI لإنشاء مجموعة موارد وجهاز ظاهري.  
 
-1. تسجيل الدخول إلى [مدخل Azure](https://portal.azure.com).
+1. سجل الدخول إلى [مدخل Azure](https://portal.azure.com).
 
 2. من مدخل Azure، افتح **Azure Cloud Shell** بالنقر فوق الأيقونة الموجودة في الجزء العلوي الأيمن من مدخل Azure.
 
     ![لقطة شاشة لأيقونة Azure Cloud Shell في مدخل Azure.](../images/1002.png)
    
-3. في مربع الحوار مرحبًا بك في Azure Cloud Shell، عند مطالبتك بتحديد **Bash** أو **PowerShell**، حدد **Bash**. 
+3. في مربع الحوار مرحبًا بك في Azure Cloud Shell، عندما يُطلب منك تحديد إما **Bash** أو **PowerShell**، حدد **Bash**. 
 
-4. ستفتح نافذة جديدة تفيد **عدم وجود مساحة تخزين مثبتة لديك**. حدد **إعدادات متقدمة**.
+4. ستفتح نافذة جديدة تفيد **ليس لديك مساحة تخزين مثبتة**. حدد **إعدادات متقدمة**.
 
 5. في شاشة الإعدادات المتقدمة، قم بملء الحقول التالية، ثم انقر فوق إنشاء مساحة تخزين:
-    - مجموعة الموارد: **أنشئ مجموعة موارد جديدة**
+    - مجموعة الموارد: **إنشاء مجموعة موارد جديدة**
     - حساب التخزين: قم بإنشاء حساب جديد واستخدم اسم فريد عالميًا (على سبيل المثال: cloudshellxyzstorage)
-    - مشاركة الملفات: إنشاء واحد جديد وتسميته cloudshellfileshare
+    - مشاركة الملفات: قم بإنشاء واحد جديد، وسمه cloudshellfileshare
 
 
-# المهمة 2: استخدم CLI لإنشاء جهاز ظاهري
+# <a name="task-2-use-cli-to-create-a-virtual-machine"></a>المهمة 2: استخدام CLI لإنشاء جهاز افتراضي
 
 في هذه المهمة، سنستخدم Azure CLI لإنشاء مجموعة موارد وجهاز ظاهري.
 
@@ -88,7 +71,7 @@
     ![لقطة شاشة لصفحة الأجهزة الظاهرية مع وجود myVMPS في حالة تشغيل.](../images/1101.png)
 
 
-# المهمة 3: تنفيذ الأوامر في Cloud Shell
+# <a name="task-3-execute-commands-in-the-cloud-shell"></a>المهمة 3: تنفيذ الأوامر في Cloud Shell
 
 في هذه المهمة، سنتدرب على تنفيذ أوامر CLI من Cloud Shell. 
 
@@ -114,7 +97,7 @@
     az vm show --resource-group myRGCLI --name myVMCLI --show-details --output table 
     ```
 
-# المهمة 4: راجع توصيات Azure Advisor
+# <a name="task-4-review-azure-advisor-recommendations"></a>المهمة 4: راجع توصيات Azure Advisor
 
 في هذه المهمة، سنراجع توصيات Azure Advisor.
 
@@ -122,7 +105,7 @@
 
 1. من نافذة **جميع الخدمات**، ابحث عن **Advisor** وحدده. 
 
-2. في نافذة **Advisor**، حدد **نظرة عامة**. يتم تجميع توصيات الإعلامات حسب الموثوقية والأمان والأداء والتكلفة. 
+2. في نافذة **Advisor**، حدد **نظرة عامة**. يتم تجميع توصيات الإعلامات حسب Reliability وSecurity وPerformance وCost. 
 
     ![لقطة شاشة لصفحة نظرة عامة على Advisor. ](../images/1103.png)
 
@@ -140,4 +123,4 @@
 
 تهانينا! لقد كوّنت Cloud Shell وأنشأتَ جهاز ظاهري باستخدام Azure CLI وتدربتَ على أوامر Azure CLI واستعرضتَ توصيات Advisor.
 
-**ملاحظة**: لتجنب التكاليف الإضافية، يمكنك إزالة مجموعة الموارد هذه اختياريًا. ابحث عن مجموعات الموارد، وانقر فوق مجموعة الموارد الخاصة بك، ثم انقر فوق **حذف مجموعة الموارد**. تحقق من اسم مجموعة الموارد ثم انقر فوق **حذف**. راقب **الإعلامات** لترى كيف تجري عملية الحذف.
+**ملاحظة**: لتجنب التكاليف الإضافية، يمكنك اختياريًا إزالة مجموعة الموارد هذه. ابحث عن مجموعات الموارد، وانقر فوق مجموعة الموارد الخاصة بك، ثم انقر فوق **حذف مجموعة الموارد**. تحقق من اسم مجموعة الموارد ثم انقر فوق **حذف**. راقب **الإعلامات** لترى كيف تجري عملية الحذف.

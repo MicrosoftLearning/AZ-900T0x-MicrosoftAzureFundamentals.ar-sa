@@ -1,27 +1,11 @@
-<div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0" dir="rtl">
-    <article class="markdown-body entry-content container-lg" itemprop="text"><table>
-  <thead>
-  <tr>
-  <th>wts</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><div><table>
-  <thead>
-  <tr>
-  <th>title</th>
-  <th>module</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><div>00 - الملف التمهيدي - سجل الأخطاء</div></td>
-  <td><div>الوحدة 00 - مقدمة الدورة التدريبية</div></td>
-  </tr>
-  </tbody>
-</table>
-</div></td>
-  </tr>
-  </tbody>
-</table>
+---
+wts:
+  title: 00 - الملف Readme - سجل الأخطاء
+  module: Module 00 - Course Introduction
+ms.openlocfilehash: 8d773ac1468ff9e566b598dc3c5973d2acb8a7a9
+ms.sourcegitcommit: 26c283fffdd08057fdce65fa29de218fff21c7d0
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137907208"
+---
